@@ -32,14 +32,14 @@ router.route('/nextSearchVenues').post(async (req, res) => {
 
     search_token_next = response.data.nextPageToken
     search_token_prev = response.data.prevPageToken
-    console.log(response.data)
+    
     res.render('venueSearchResults', {
       title: 'Video List',
       searchVenueTerm: search_ven_term,
       venues: response.data.items,
     })
   } catch (e) {
-    console.log(e)
+    
     res.status(404).render('venueNotFound', {
       title: 'Not Found',
       searchVenueTerm: search_ven_term
@@ -51,7 +51,7 @@ router.route('/nextSearchVenues').post(async (req, res) => {
 router.route('/prevSearchVenues').post(async (req, res) => {
   
   try {
-    console.log(search_token_prev)
+    
     if (!search_token_prev) {
       res.render('venueSearchResults', {
         title: 'Video List',
@@ -65,14 +65,14 @@ router.route('/prevSearchVenues').post(async (req, res) => {
 
     search_token_next = response.data.nextPageToken
     search_token_prev = response.data.prevPageToken
-    console.log(response.data)
+    
     res.render('venueSearchResults', {
       title: 'Video List',
       searchVenueTerm: search_ven_term,
       venues: response.data.items,
     })
   } catch (e) {
-    console.log(e)
+    
     res.status(404).render('venueNotFound', {
       title: 'Not Found',
       searchVenueTerm: search_ven_term
@@ -117,7 +117,7 @@ router.route('/searchvenues').post(async (req, res) => {
       venues: response.data.items,
     })
   } catch (e) {
-    console.log(e)
+   
     res.status(404).render('venueNotFound', {
       title: 'Not Found',
       searchVenueTerm: req.body.searchVenueTerm
