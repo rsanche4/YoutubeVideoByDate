@@ -1,72 +1,74 @@
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/public/css/main-styles.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>{{title}}</h1>
+    </header>
+    <main>
+        <p>Youtube Archive By Date is a website that lets users find old videos on Youtube that they may have
+            watched and enjoyed in the past, while also mimicking the nostalgic aesthetic of early internet youtube.
+            The website has a retro design and a user-friendly interface that allows users to search for videos by
+            keywords and dates.</p>
+        <br>
+        <br>
+        <form method="POST" action="/searchvenues">
+            <label for="searchVenueTerm"></label>
+            <input type="text" id="searchVenueTerm" name="searchVenueTerm" value="{{venueTerm}}">
+            <input type="submit" value="Search">
+            <label for="yearFrom">Only show results from </label>
+            <select name="yearFrom" id="yearFrom">
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+            </select>
+
+            <label for="yearTo"> until </label>
+            <select name="yearTo" id="yearTo">
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+            </select>
 
 
-    <head>
-        <title>{{title}}</title>
-        <link rel="stylesheet" href="/public/css/main-styles.css">
-        <div class="github-card" data-github="rsanche4" data-width="200" data-height="" data-theme="default"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-    </head>
+        </form>
+    </main>
+    <footer>
+        <div class="github-card" data-github="rsanche4" data-width="400" data-height="" data-theme="default"></div>
+        <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+    </footer>
 
-    <body>
-        <header>
-            <h1>{{title}}</h1>
-        </header>
-        <main>
-            <p>Youtube Archive By Date is a website that lets users find old videos on Youtube that they may have
-                watched and enjoyed in the past, while also mimicking the nostalgic aesthetic of early internet youtube.
-                The website has a retro design and a user-friendly interface that allows users to search for videos by
-                keywords and dates.</p>
-            <br>
-            <br>
-            <form method="POST" action="/searchvenues">
-                <label for="searchVenueTerm"></label>
-                <input type="text" id="searchVenueTerm" name="searchVenueTerm" value="{{venueTerm}}">
-                <input type="submit" value="Search">
-                <label for="yearFrom">Only show results from </label>
-                <select name="yearFrom" id="yearFrom">
-                    <option value="2005">2005</option>
-                    <option value="2006">2006</option>
-                    <option value="2007">2007</option>
-                    <option value="2008">2008</option>
-                    <option value="2009">2009</option>
-                    <option value="2010">2010</option>
-                    <option value="2011">2011</option>
-                    <option value="2012">2012</option>
-                    <option value="2013">2013</option>
-                    <option value="2014">2014</option>
-                    <option value="2015">2015</option>
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                </select>
-
-                <label for="yearTo"> until </label>
-                <select name="yearTo" id="yearTo">
-                    <option value="2005">2005</option>
-                    <option value="2006">2006</option>
-                    <option value="2007">2007</option>
-                    <option value="2008">2008</option>
-                    <option value="2009">2009</option>
-                    <option value="2010">2010</option>
-                    <option value="2011">2011</option>
-                    <option value="2012">2012</option>
-                    <option value="2013">2013</option>
-                    <option value="2014">2014</option>
-                    <option value="2015">2015</option>
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                </select>
-
-
-            </form>
-        </main>
-    </body>
+</body>
