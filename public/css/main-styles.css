@@ -89,3 +89,10 @@ a {
 a:hover {
 	color: yellow;
 } */
+
+.github-card {
+	position: fixed;
+	bottom: 0%;
+	left: 50%;
+	margin-left: -100px;
+}
