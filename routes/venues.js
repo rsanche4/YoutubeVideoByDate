@@ -4,7 +4,7 @@ import axios from 'axios';
 import moment from "moment";
 import {Router} from 'express';
 const router = Router();
-const YOUR_API_KEY = 'AIzaSyB1YwHtEHoSODu1B603lVDiLMjZjAyOAlk'
+const YOUR_API_KEY = process.env.KEY
 let search_token_next = ''
 let search_token_prev = ''
 let search_ven_term = ''
