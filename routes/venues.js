@@ -39,7 +39,7 @@ router.route('/nextSearchVenues').post(async (req, res) => {
       venues: response.data.items,
     })
   } catch (e) {
-    
+    console.log(e)
     res.status(404).render('venueNotFound', {
       title: 'Not Found',
       searchVenueTerm: search_ven_term
